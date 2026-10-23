@@ -1,0 +1,184 @@
+/* VARIABLES DE COLOR (Manual ANEIAP) */
+:root {
+  --bg-dark: #0a1f11;
+  --bg-card: #0d2a17;
+  --verde-oscuro: #76C04E;
+  --verde-claro: #A8CF45;
+  --azul-corp: #0D62AD;
+  --text-white: #ffffff;
+  --text-muted: #c3d2c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(10, 31, 17, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text-white);
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: var(--verde-claro);
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 60px 50px;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-card {
+  background-color: var(--bg-card);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 650px;
+  border: 1px solid rgba(168, 207, 69, 0.2);
+}
+
+.subtitle {
+  color: var(--verde-claro);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.org-name {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.hero-card h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 10px 0 20px 0;
+}
+
+.highlight {
+  color: var(--verde-claro);
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.btn-primary {
+  background-color: var(--verde-claro);
+  color: #000;
+}
+
+.btn-outline {
+  border: 1px solid var(--text-white);
+  color: var(--text-white);
+}
+
+/* SECCIÓN ¿QUÉ ES ANEIAP? */
+.about-section {
+  padding: 80px 50px;
+  background-color: #12361e;
+}
+
+.about-header {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.section-tag {
+  color: var(--verde-claro);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.about-header h2 {
+  font-size: 2.8rem;
+  color: var(--verde-claro);
+  margin: 10px 0;
+}
+
+.subtext {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.body-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+  color: var(--verde-claro);
+  font-size: 1rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
